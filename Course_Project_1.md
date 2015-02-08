@@ -2,8 +2,6 @@
 title: "Course Project 1"
 author: "Andy Kannurpatti"
 date: "Saturday, February 07, 2015"
-output:
-  html_document: default
 ---
 #plot1.R
 
