@@ -10,9 +10,11 @@ All functions are shown below and use one parameter, textfilename.
 
 textfilename in this assignment is "household_power_consumption.txt"
 
+Finally, all the plots are shown below as well.  If individual png files are needed please check the folder titled "plots".
 
 
-#plot1.R
+
+##plot1.R
 
         plot1 <- function (textfilename = character) {
                 data1 <- subset(read.table(textfilename, header= TRUE, sep=";",stringsAsFactors = FALSE), {Date == "1/2/2007" | Date == "2/2/2007"})
@@ -26,7 +28,7 @@ textfilename in this assignment is "household_power_consumption.txt"
                 dev.off()
           }
         
-#plot2.R
+##plot2.R
 
         plot2 <- function (textfilename = character) {
                 data1 <- subset(read.table(textfilename, header= TRUE, sep=";",stringsAsFactors = FALSE), {Date == "1/2/2007" | Date == "2/2/2007"})
@@ -39,7 +41,7 @@ textfilename in this assignment is "household_power_consumption.txt"
                 dev.off()
         }
 
-#plot3.R
+##plot3.R
 
         plot3 <- function (textfilename = character) {
                 data1 <- subset(read.table(textfilename, header= TRUE, sep=";",stringsAsFactors = FALSE), {Date == "1/2/2007" | Date == "2/2/2007"})
@@ -60,7 +62,7 @@ textfilename in this assignment is "household_power_consumption.txt"
         
         }
 
-#plot4.R
+##plot4.R
 
 
         plot4 <- function (textfilename = character) {
