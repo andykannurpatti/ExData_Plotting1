@@ -17,3 +17,16 @@ output: html_document
                 dev.copy(png, filename = "plot1.png", width = 480, height = 480)
                 dev.off()
         }
+        
+#Plot2.R
+
+        plot2 <- function (textfilename = character) {
+                data1 <- subset(read.table(textfilename, header= TRUE, sep=";",stringsAsFactors = FALSE), {Date == "1/2/2007" | Date == "2/2/2007"})
+                x <- as.POSIXct(data1$Date, format = "%d/%m/%Y")
+                xx <- paste(x, data1$Time)
+                datetime <- strptime (xx, "%Y-%m-%d %H:%M:%S")
+                data1 <- cbind(datetime, data1)
+                with(data1, plot(datetime, as.numeric(Global_active_power),type = "l", xlab="", ylab = "Global Active Power (kilowatts)", col="black"))
+                dev.copy(png, filename = "plot2.png", width = 480, height = 480)
+                dev.off()
+        }
