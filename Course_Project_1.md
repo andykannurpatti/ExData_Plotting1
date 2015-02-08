@@ -2,7 +2,8 @@
 title: "Course Project 1"
 author: "Andy Kannurpatti"
 date: "Saturday, February 07, 2015"
-output: html_document
+output:
+  html_document: default
 ---
 #plot1.R
 
@@ -94,3 +95,8 @@ output: html_document
                 with(data1, plot(datetime, as.numeric(Global_reactive_power), type="l", xlab = "datetime",ylab="Global_reactive_power", col="black"))
         
         }
+
+### Plot 1
+
+
+![plot 1](figure/plot1.png) 
