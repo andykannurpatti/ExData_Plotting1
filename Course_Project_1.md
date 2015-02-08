@@ -3,6 +3,15 @@ title: "Course Project 1"
 author: "Andy Kannurpatti"
 date: "Saturday, February 07, 2015"
 ---
+
+##Course Project 1
+
+All functions are shown below and use one parameter, textfilename.
+
+textfilename in this assignment is "household_power_consumption.txt"
+
+
+
 #plot1.R
 
         plot1 <- function (textfilename = character) {
